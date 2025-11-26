@@ -1,0 +1,101 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.empty {
+  text-align: center;
+  color: #6b7280; /* Tailwind gray-500 */
+  font-size: 1.125rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .itemCard {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.itemImage {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.itemDetails {
+  flex: 1;
+}
+
+.itemTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.itemText {
+  color: #4b5563; /* Tailwind gray-600 */
+  margin-bottom: 0.25rem;
+}
+
+.itemSubtotal {
+  font-weight: bold;
+  color: #111827; /* Tailwind gray-900 */
+}
+
+.totals {
+  text-align: right;
+  margin-top: 1.5rem;
+  border-top: 1px solid #e5e7eb; /* Tailwind gray-200 */
+  padding-top: 1rem;
+}
+
+.totalQuantity {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.totalPrice {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.button{
+      margin-top: 10px;
+  padding: 10px;
+  background-color: #f21d41;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;  
+}
+.button:hover{
+    background-color: #f2561d;
+}
